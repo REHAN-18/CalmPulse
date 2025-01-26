@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - CalmPulse</title>
+    <link rel="stylesheet" href="../css/mood-tracker.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CalmPulse</div>
+        <div class="nav-links">
+            <a href="../index.html" class="active">Home</a>
+            <a href="mood-tracker.html">Mood Tracker</a>
+            <a href="../pages/journal.html">Journal</a>
+            <a href="../pages/ai-therapist.html">AI Therapist</a>
+            <a href="../pages/resources.html">Resources</a>
+            <a href="../pages/crisis.html" class="emergency-btn">Crisis Help</a>
+        </div>
+    </nav>
+    
+    <main class="mood-tracker-container">
+        <h1 style="color:#7C83FD">Everyday Mood <span style="color : black">Journal</span></h1>
+        
+        <div class="mood-input-section">
+            <h2>How’s everything going for you today?</h2>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="Ecstatic">😊 Ecstatic </button>
+                <button class="mood-btn" data-mood="Cheerful">🙂 Cheerful</button>
+                <button class="mood-btn" data-mood="Neutral">😐 Neutral </button>
+                <button class="mood-btn" data-mood="Off">😕 Off</button>
+                <button class="mood-btn" data-mood="Devastated">😢 Devastated </button>
+            </div>
+            
+            <div class="mood-factors">
+                <h3>What’s shaping your mood at the moment?</h3>
+                <div class="factors-grid">
+                    <label><input type="checkbox" value="sleep"> Sleep</label>
+                    <label><input type="checkbox" value="exercise"> Exercise</label>
+                    <label><input type="checkbox" value="nutrition"> Nutrition</label>
+                    <label><input type="checkbox" value="stress"> Strain</label>
+                    <label><input type="checkbox" value="social"> Interactions</label>
+                </div>
+            </div>
+
+            <div class="mood-notes">
+                <textarea placeholder="Leave a note about your day..."></textarea>
+            </div>
+
+            <button id="save-mood" class="primary-btn">Save Note</button>
+        </div>
+
+        <div class="mood-history">
+            <h2>Vibe Timeline</h2>
+            <canvas id="mood-chart"></canvas>
+            <div id="mood-calendar"></div>
+        </div>
+    </main>
+    <script src="../js/mood-tracker.js"></script>
+</body>
+</html>

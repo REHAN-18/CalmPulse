@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Therapist - CalmPulse</title>
+    <link rel="stylesheet" href="../css/ai-therapist.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CalmPulse</div>
+        <div class="nav-links">
+            <a href="../index.html" class="active">Home</a>
+            <a href="../pages/mood-tracker.html">Mood Tracker</a>
+            <a href="../pages/journal.html">Journal</a>
+            <a href="ai-therapist.html">AI Therapist</a>
+            <a href="../pages/resources.html">Resources</a>
+            <!-- <a href="pages/community.html">Community</a> -->
+            <a href="../pages/crisis.html" class="emergency-btn">Crisis Help</a>
+        </div>
+    </nav>
+
+    <main class="therapist-container fade-in">
+        <h1 style="color : #7C83FD">Intelligent Therapy <span style="color: black">Partner</span></h1>
+        <div class="disclaimer">
+            <p>Note: This AI assistant provides guidance, but it is not a replacement for licensed mental health professionals. If you're experiencing severe symptoms, please seek help from a healthcare provider.</p>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message ai-message">
+                    <div class="message-content">
+                        Hello! I'm here to support you. What's on your mind today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <textarea 
+                    id="user-input" 
+                    placeholder="Share your thoughts..."
+                    rows="1"
+                ></textarea>
+                <button id="send-message" class="primary-btn">
+                    ➤
+                </button>
+            </div>
+        </div>
+
+        <!-- <div class="suggested-topics">
+            <h3>Suggested Topics</h3>
+            <div class="topic-buttons">
+                <button class="topic-btn">Dealing with Anxiety</button>
+                <button class="topic-btn">Managing Stress</button>
+                <button class="topic-btn">Improving Sleep</button>
+                <button class="topic-btn">Building Self-esteem</button>
+            </div>
+        </div> -->
+    </main>
+
+    <script src="../js/ai-therapist.js"></script>
+</body>
+</html> 
